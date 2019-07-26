@@ -1,0 +1,614 @@
+
+.btntxt1 {
+    background-image : url("../images/btntxt1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.47rem;
+    top              : 10.09rem;
+    width            : 1.93rem;
+    height           : 2.06rem;
+    z-index          : 42;
+}
+.btnbg1 {
+    background-image : url("../images/btnbg1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.41rem;
+    top              : 10.02rem;
+    width            : 2.28rem;
+    height           : 2.28rem;
+    z-index          : 41;
+}
+.btntxt3 {
+    background-image : url("../images/btntxt3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 5.03rem;
+    top              : 10.09rem;
+    width            : 1.88rem;
+    height           : 2rem;
+    z-index          : 40;
+}
+.btnbg3 {
+    background-image : url("../images/btnbg3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 4.98rem;
+    top              : 10.02rem;
+    width            : 2.28rem;
+    height           : 2.28rem;
+    z-index          : 39;
+}
+.btntxt2 {
+    background-image : url("../images/btntxt2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.75rem;
+    top              : 10.09rem;
+    width            : 1.88rem;
+    height           : 2rem;
+    z-index          : 38;
+}
+.btnbg2 {
+    background-image : url("../images/btnbg2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.7rem;
+    top              : 10.02rem;
+    width            : 2.28rem;
+    height           : 2.28rem;
+    z-index          : 37;
+}
+.t1 {
+    background-image : url("../images/t1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.79rem;
+    top              : 4.91rem;
+    width            : 1.98rem;
+    height           : 2.36rem;
+    z-index          : 8;
+}
+.t2 {
+    background-image : url("../images/t2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.42rem;
+    top              : 4.6rem;
+    width            : 1.37rem;
+    height           : 1.57rem;
+    z-index          : 7;
+}
+.t3 {
+    background-image : url("../images/t3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.73rem;
+    top              : 4.5rem;
+    width            : 1.64rem;
+    height           : 1.94rem;
+    z-index          : 6;
+}
+.t4 {
+    background-image : url("../images/t4.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 5.06rem;
+    top              : 4.52rem;
+    width            : 1.79rem;
+    height           : 1.64rem;
+    z-index          : 5;
+}
+.t5 {
+    background-image : url("../images/t5.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 4.28rem;
+    top              : 6.22rem;
+    width            : 1.78rem;
+    height           : 1.16rem;
+    z-index          : 4;
+}
+.tbg {
+    background-image : url("../images/tbg.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.82rem;
+    top              : 2.78rem;
+    width            : 5.9rem;
+    height           : 6.02rem;
+    z-index          : 3;
+}
+.home {
+    background-image : url("../images/home.png");
+    background-size  : 100% 100%;
+    position         : fixed;
+    left             : 0.42rem;
+    top              : 1.46rem;
+    width            : 0.6rem;
+    height           : 0.6rem;
+    z-index          : 999999999;
+    display          : none;
+}
+.g1 {
+    background-image : url("../images/g1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.42rem;
+    top              : 1.47rem;
+    width            : 6.5rem;
+    height           : 3.82rem;
+    z-index          : 40;
+}
+.g2 {
+    background-image : url("../images/g2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.5rem;
+    top              : 5.65rem;
+    width            : 6.55rem;
+    height           : 3.37rem;
+    z-index          : 39;
+}
+.g3 {
+    background-image : url("../images/g3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.5rem;
+    top              : 9.38rem;
+    width            : 6.5rem;
+    height           : 3.94rem;
+    z-index          : 38;
+}
+.gdetail1 {
+    background-image : url("../images/gdetail1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.43rem;
+    top              : 5.93rem;
+    width            : 6.64rem;
+    height           : 7.01rem;
+    z-index          : 6;
+}
+.gdetail2 {
+    background-image : url("../images/gdetail2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.43rem;
+    top              : 5.93rem;
+    width            : 6.64rem;
+    height           : 7.01rem;
+    z-index          : 5;
+}
+.gdetail3 {
+    background-image : url("../images/gdetail3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.43rem;
+    top              : 5.93rem;
+    width            : 6.64rem;
+    height           : 7.01rem;
+    z-index          : 4;
+}
+.close1 {
+    background-image : url("../images/close.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.48rem;
+    top              : 11.23rem;
+    width            : 0.5rem;
+    height           : 0.5rem;
+    z-index          : 38;
+}
+.close2 {
+    background-image : url("../images/close.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.48rem;
+    top              : 9.43rem;
+    width            : 0.5rem;
+    height           : 0.5rem;
+    z-index          : 26;
+}
+.close3 {
+    background-image : url("../images/close.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.48rem;
+    top              : 11.23rem;
+    width            : 0.5rem;
+    height           : 0.5rem;
+    z-index          : 14;
+}
+.p3t1 {
+    background-image : url("../images/p3t1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2rem;
+    top              : 1.13rem;
+    width            : 1.2rem;
+    height           : 1.21rem;
+    z-index          : 11;
+}
+.p3t2 {
+    background-image : url("../images/p3t2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.79rem;
+    top              : 1.81rem;
+    width            : 1.3rem;
+    height           : 1.29rem;
+    z-index          : 10;
+}
+.p3t3 {
+    background-image : url("../images/p3t3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.38rem;
+    top              : 2.84rem;
+    width            : 0.83rem;
+    height           : 0.9rem;
+    z-index          : 9;
+}
+.p3t4 {
+    background-image : url("../images/p3t4.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.71rem;
+    top              : 3.43rem;
+    width            : 0.9rem;
+    height           : 1.49rem;
+    z-index          : 8;
+}
+.p3t5 {
+    background-image : url("../images/p3t5.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.01rem;
+    top              : 4.71rem;
+    width            : 2.03rem;
+    height           : 2.2rem;
+    z-index          : 7;
+}
+.p3t6 {
+    background-image : url("../images/p3t6.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 4.1rem;
+    top              : 2.4rem;
+    width            : 0.52rem;
+    height           : 5.64rem;
+    z-index          : 6;
+}
+.p3tbg {
+    background-image : url("../images/p3tbg.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 1.99rem;
+    top              : 6.79rem;
+    width            : 3.68rem;
+    height           : 2.45rem;
+    z-index          : 5;
+}
+.bk8 {
+    background-image : url("../images/bk8.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0rem;
+    top              : 45.14rem;
+    width            : 7.23rem;
+    height           : 3.82rem;
+    z-index          : 35;
+}
+.bk7 {
+    background-image : url("../images/bk7.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.76rem;
+    top              : 40.51rem;
+    width            : 5.71rem;
+    height           : 3.63rem;
+    z-index          : 34;
+}
+.bk6 {
+    background-image : url("../images/bk6.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0rem;
+    top              : 33.23rem;
+    width            : 7.5rem;
+    height           : 6.2rem;
+    z-index          : 33;
+}
+.bk5 {
+    background-image : url("../images/bk5.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.44rem;
+    top              : 31.33rem;
+    width            : 6.67rem;
+    height           : 0.96rem;
+    z-index          : 32;
+}
+.bk4 {
+    background-image : url("../images/bk4.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.12rem;
+    top              : 24.95rem;
+    width            : 7.11rem;
+    height           : 5.29rem;
+    z-index          : 31;
+}
+.bk3 {
+    background-image : url("../images/bk3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.57rem;
+    top              : 18.75rem;
+    width            : 6.32rem;
+    height           : 5.84rem;
+    z-index          : 30;
+}
+.bk2 {
+    background-image : url("../images/bk2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.53rem;
+    top              : 14.04rem;
+    width            : 6.57rem;
+    height           : 3.7rem;
+    z-index          : 29;
+}
+.bk1 {
+    background-image : url("../images/bk1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0rem;
+    top              : 8.98rem;
+    width            : 7.5rem;
+    height           : 4.27rem;
+    z-index          : 208;
+}
+.p3next {
+    background-image : url("../images/p3next.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.57rem;
+    top              : 49.91rem;
+    width            : 2.03rem;
+    height           : 0.5rem;
+    z-index          : 42;
+}
+.p4t1 {
+    background-image : url("../images/p4t1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.64rem;
+    top              : 3.71rem;
+    width            : 6.27rem;
+    height           : 0.92rem;
+    z-index          : 29;
+    opacity          : 0;
+    animation        : tinDownIn 0.6s forwards ease;
+}
+.p4t2 {
+    background-image : url("../images/p4t2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 1.74rem;
+    top              : 4.83rem;
+    width            : 3.98rem;
+    height           : 0.69rem;
+    z-index          : 30;
+    opacity          : 0;
+    animation        : tinDownIn 0.6s 0.3s forwards ease;
+}
+.p4changtu {
+    z-index         : 1;
+    width           : 10.03rem;
+    height          : 6.68rem;
+    position        : absolute;
+    background      : url("../images/p4changtu.png");
+    background-size : 100% 100%;
+    top             : 6.2rem;
+    animation       : changtu 5s infinite alternate linear;
+
+}
+@keyframes changtu {
+    from {
+        transform : translateX(0);
+    }
+    to {
+        transform : translateX(-2.53rem);
+    }
+
+}
+.p4shadow {
+    background      : url("../images/p4shadow.png");
+    background-size : 100% 100%;
+    width           : 7.50rem;
+    height          : 4.44rem;
+    position        : absolute;
+    left            : 0;
+    top             : 10.1rem;
+    z-index         : 2;
+
+}
+.cao {
+    background-image : url("../images/cao.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.87rem;
+    top              : 10.39rem;
+    width            : 3.64rem;
+    height           : 2.88rem;
+    z-index          : 24;
+}
+.birds {
+    background-image : url("../images/birds.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 4.08rem;
+    top              : 8.42rem;
+    width            : 3.39rem;
+    height           : 4.59rem;
+    z-index          : 23;
+}
+.arrow {
+    background-image : url("../images/arrow.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.36rem;
+    top              : 10.56rem;
+    width            : 0.69rem;
+    height           : 0.62rem;
+    z-index          : 27;
+}
+.p5b1people {
+    background-image : url("../images/p5b1people.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.13rem;
+    top              : 1.62rem;
+    width            : 2.06rem;
+    height           : 1.83rem;
+    z-index          : 13;
+}
+.p5b1text {
+    background-image : url("../images/p5b1text.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.19rem;
+    top              : 1.97rem;
+    width            : 4.94rem;
+    height           : 0.74rem;
+    z-index          : 12;
+}
+.p5b2text {
+    background-image : url("../images/p5b2text.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.42rem;
+    top              : 3.82rem;
+    width            : 4.94rem;
+    height           : 2.16rem;
+    z-index          : 16;
+}
+.p5b2people {
+    background-image : url("../images/p5b2people.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 3.11rem;
+    top              : 3.36rem;
+    width            : 4.22rem;
+    height           : 3.22rem;
+    z-index          : 17;
+}
+.p5b3t1 {
+    background-image : url("../images/p5b3t1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.65rem;
+    top              : 7.48rem;
+    width            : 5.78rem;
+    height           : 1.32rem;
+    z-index          : 25;
+}
+.p5b3t2 {
+    background-image : url("../images/p5b3t2.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 2.04rem;
+    top              : 10.07rem;
+    width            : 3.94rem;
+    height           : 2.22rem;
+    z-index          : 24;
+}
+.p5b3t3 {
+    background-image : url("../images/p5b3t3.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.97rem;
+    top              : 12.89rem;
+    width            : 3.96rem;
+    height           : 1.14rem;
+    z-index          : 23;
+}
+.p5b3t4 {
+    background-image : url("../images/p5b3t4.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.95rem;
+    top              : 14.41rem;
+    width            : 4.29rem;
+    height           : 0.93rem;
+    z-index          : 22;
+}
+.p5b3t5 {
+    background-image : url("../images/p5b3t5.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.95rem;
+    top              : 15.72rem;
+    width            : 5.38rem;
+    height           : 1.18rem;
+    z-index          : 21;
+}
+.p5b5 {
+    background-image : url("../images/p5b5.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.47rem;
+    top              : 20.35rem;
+    width            : 6.57rem;
+    height           : 3.7rem;
+    z-index          : 29;
+}
+.p5b6 {
+    background-image : url("../images/p5b6.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 0.44rem;
+    top              : 24.52rem;
+    width            : 6.59rem;
+    height           : 3.71rem;
+    z-index          : 30;
+}
+.share {
+    background-image : url("../images/share.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 5.58rem;
+    top              : 1.53rem;
+    width            : 1.43rem;
+    height           : 1.22rem;
+    z-index          : 24;
+    animation        : flash 1s infinite alternate;
+}
+.p6t1 {
+    background-image : url("../images/p6t1.png");
+    background-size  : 100% 100%;
+    position         : absolute;
+    left             : 1.88rem;
+    top              : 3.04rem;
+    width            : 3.99rem;
+    height           : 0.45rem;
+    z-index          : 23;
+}
+.p6t2 {
+    position : absolute;
+    left     : 0.52rem;
+    top      : 3.86rem;
+    width    : 6.78rem;
+    height   : 3.33rem;
+    z-index  : 22;
+    display  : none;
+}
+.p6t2s {
+    position : absolute;
+    left     : 0;
+    top      : 0;
+    width    : 100%;
+    height   : 100%;
+}
