@@ -168,11 +168,12 @@ body {
     z-index         : 2;
 }
 .clickbox {
-    width    : 1rem;
-    height   : 1rem;
+    width    : 0.8rem;
+    height   : 0.8rem;
     position : absolute;
-    left     : 2.8rem;
-    top      : 3.4rem;
+
+    left: 5.9rem;
+    top: 2.9rem;
     z-index  : 9999;
 
 }
@@ -584,4 +585,10 @@ body {
     position: absolute;
     left: 74.2%;
     top: 3.3rem;
+}
+.voice1, .voice2, .voice3, .voice4 {
+    width    : 0.81rem;
+    position : absolute;
+    left     : 1rem;
+    top      : 1.4rem;
 }

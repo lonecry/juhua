@@ -9,8 +9,66 @@ import './assets/css/animation.css';
 import './assets/css/cssfromps.css';
 import './assets/css/css.css';
 
+var echarts = require('echarts');
+var option = {
+	tooltip: {
+		trigger: 'axis',
+		axisPointer: {
+			type: 'cross',
+			label: {
+				backgroundColor: '#6a7985'
+			}
+		}
+	},
+	legend: {
+		data: ['利润总额', '销售收入']
+	},
+	grid: {
+		left: '3%',
+		right: '4%',
+		bottom: '3%',
+		containLabel: true
+	},
+	xAxis: {
+		type: 'category',
+		boundaryGap: true,
+		data: ['2015', '2016', '2017', '2018']
+	},
+	yAxis: {
+		type: 'value'
+	},
+	series: [
+		{
+			name: '利润总额',
+			type: 'line',
+			stack: '总量',
+			data: [4.61, 4.17, 8.08, 14.04,],
+			// 显示数值
+			itemStyle: {
+				normal: {label: {show: true}},
+				color: 'red',
+				emphasis: {
+					shadowBlur: 10,
+					shadowOffsetX: 0,
+					shadowColor: 'rgba(30, 144, 255，0.5)'
+				}
+			}
+		},
+		{
+			name: '销售收入',
+			type: 'line',
+			stack: '总量',
+			data: [243.47, 252.46, 266.59, 312.72],
+			color: '#1865b6',
+			// 显示数值
+			itemStyle: {normal: {label: {show: true}}}
+		},
+	]
+};
+var myChart = echarts.init(document.getElementById('bk6'));
+myChart.setOption(option);
 var jQuery = require("jquery-easing");
-// import {CountUp} from 'countup.js';
+import {CountUp} from 'countup.js';
 import {fenxiang} from "./lib/fenxiang"
 // import VConsole from 'vconsole/dist/vconsole.min.js' //import vconsole
 let index = 0
@@ -25,7 +83,7 @@ let play_now = true;
 let music_now = true;
 let playused = false;
 let lastvideo = document.getElementById('lastvideo')
-let firstvideo = document.getElementById('firstvideo')
+// let firstvideo = document.getElementById('firstvideo')
 let sandaivideo = document.getElementById('sandaivideo')
 let sandaiaudio = document.getElementById('sandaiaudio')
 let stagevideo = document.getElementById('stagevideo')
@@ -58,11 +116,11 @@ lastvideo.addEventListener('ended', function (){
 sandaivideo.addEventListener('ended', function (){
 	musicreturn()
 })
-firstvideo.addEventListener('ended', function (){
-	// document.getElementById("musics").play();
-	$('.shan').remove()
-	$('.stage,.home').fadeIn()
-})
+// firstvideo.addEventListener('ended', function (){
+// 	// document.getElementById("musics").play();
+// 	$('.shan').remove()
+// 	$('.stage,.home').fadeIn()
+// })
 $('.skip1').click(() =>{
 	// document.getElementById("musics").play();
 	$('.shan').remove()
@@ -98,17 +156,17 @@ $(() =>{
 	init()
 	setTimeout(() =>{
 		$('.loading').hide()
-		$('.shan').fadeIn()
+		$('.stage,.home').fadeIn()
 	}, 1000)
 	//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
 	document.addEventListener("WeixinJSBridgeReady", function (){
 		// document.getElementById("musics").load();
-		document.getElementById("firstvideo").load();
+		// document.getElementById("firstvideo").load();
 		document.getElementById("sandaivideo").load();
 		document.getElementById("hzmaudio").load();
-		document.getElementById("firstvideo").play();
+		// document.getElementById("firstvideo").play();
 	}, false);
-	document.getElementById("firstvideo").play();
+	// document.getElementById("firstvideo").play();
 	$(".music_play").click(function (){
 		if (play_now) {
 			$(".music_play").removeClass("music_pause");
@@ -146,8 +204,8 @@ $(() =>{
 		$('.generation').removeClass('clickable')
 		$('.g1').addClass('clickable')
 		$('.clickbox').animate({
-			"left": "2.8rem",
-			"top": "3.4rem"
+			"left": "5.9rem",
+			"top": "2.9rem"
 		}, 1200)
 		if (rokouclickable) {
 			rokouclickable = false
@@ -219,13 +277,13 @@ $(() =>{
 		$('.substage').fadeOut()
 		if (generationid == 1) {
 			$('.clickbox').animate({
-				"left": "3.4rem",
-				"top": "7.4rem"
+				"left": "0.7rem",
+				"top": "6.7rem"
 			}, 1000)
 		} else if (generationid == 2) {
 			$('.clickbox').animate({
-				"left": "3.2rem",
-				"top": "11.4rem"
+				"left": "5.9rem",
+				"top": "11rem"
 			}, 1000)
 		} else {
 			console.log("Watched Over")
@@ -246,8 +304,8 @@ $(() =>{
 		$(".generation").removeClass('clickable')
 		$(".g1").addClass('clickable')
 		$('.clickbox').animate({
-			"left": "2.8rem",
-			"top": "3.4rem"
+			"left": "5.9rem",
+			"top": "2.9rem"
 		}, 1200)
 	})
 	$('.p3next').click(function (){
@@ -270,8 +328,20 @@ $(() =>{
 					$('.p6t2').hide()
 					hzmaudio.pause()
 					$('.p5items').fadeIn()
-					swiperScrollbar.update()
-					p5b6swiper.update()
+
+					setTimeout(()=>{
+						p5b6swiper = new Swiper('.p5b6swiper', {
+							initialSlide: 0,
+							direction: 'horizontal',
+							autoplay:true,
+							pagination: {
+								el: '.swiper-pagination',
+								clickable: true
+							},
+						});
+						console.log("Update")
+						swiperScrollbar.update()
+					},1500)
 					$('.arrow').show()
 				} else if (this.activeIndex == 2) {
 					lastvideo.pause()
@@ -295,9 +365,7 @@ $(() =>{
 	var p5b6swiper = new Swiper('.p5b6swiper', {
 		initialSlide: 0,
 		direction: 'horizontal',
-		autoplay: {
-			delay: 3000,
-		},
+		autoplay:true,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true
@@ -311,6 +379,63 @@ $(() =>{
 		stagevideo.pause()
 		musicreturn()
 	})
+	$('.seeDetail').click(function (w){
+		var url = $(this).attr('seeurl')
+		if (url)
+			window.location.href = url
+	})
+	var bk6ele = document.getElementById('bk6')
+	var bk7ele = document.getElementById('bk7')
+	var options = {
+		attributes: true,//观察node对象的属性
+		attributeFilter: ['class']//只观察class属性
+	}
+	var bk6 = new MutationObserver(function (mutationRecord, observer){
+		var cls = mutationRecord[0].target.className
+		// console.log(observer)
+		if (cls.indexOf("animate") > 0) {
+			console.log(cls)
+			myChart.clear();
+			setTimeout(() =>{
+				myChart.setOption(option);
+			}, 500)
+		}else {
+			myChart.clear();
+		}
+	})
+	bk6.observe(bk6ele, options)
+	const cuntupoptions = {
+		duration: 2.5,
+		decimalPlaces: 2,
+		useGrouping: false,
+	};
+	let num1 = new CountUp('num1', 312.72, cuntupoptions);
+	let num2 = new CountUp('num2', 14.04, cuntupoptions);
+
+	var bk7 = new MutationObserver(function (mutationRecord, observer){
+		var cls = mutationRecord[0].target.className
+		// console.log(observer)
+		if (cls.indexOf("animate") > 0) {
+
+			setTimeout(() =>{
+				if (!num1.error) {
+					num1.start();
+				} else {
+					console.error(num.error);
+				}
+
+				if (!num2.error) {
+					num2.start();
+				} else {
+					console.error(num2.error);
+				}
+			}, 500)
+		} else {
+			num1.reset();
+			num2.reset();
+		}
+	})
+	bk7.observe(bk7ele, options)
 })
 function miniAlert(w){
 	$('.tipos').html(w).fadeIn()
